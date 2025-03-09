@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>配色方案生成器</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="container">
+    <div class="input-section">
+      <textarea id="colorInput" placeholder="示例输入：静谧蓝（#4A90E2） + 草地绿（#85BB5F） + 橙色活力（#FF6B35）"></textarea>
+      <button id="generateBtn">生成配色方案</button>
+    </div>
+    
+    <div class="preview-section">
+      <h3>颜色预览</h3>
+      <div id="colorPreview"></div>
+    </div>
+
+    <div class="code-section">
+      <h3>HTML代码</h3>
+      <pre id="htmlCode"></pre>
+      <button id="copyBtn">复制代码</button>
+    </div>
+
+    <div class="history-section">
+      <h3>历史记录（点击查看）</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
